@@ -1,9 +1,11 @@
 /* eslint-disable no-undef */
+const { join } = require('path');
 
 module.exports = {
   mode: 'development',
-  entry: './webpack-examples/basic.js',
+  entry: join(__dirname, 'webpack-examples', 'basic.js'),
   output: {
-    path: 
+    path: join(__dirname, 'build'),
+    filename: 'bundle.[name].js',
   },
 };
