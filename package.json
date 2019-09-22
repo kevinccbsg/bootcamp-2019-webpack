@@ -7,6 +7,7 @@
     "lint": "./node_modules/.bin/eslint src",
     "server": "./node_modules/.bin/http-server . -c-1",
     "webpack": "./node_modules/.bin/webpack --config webpack.dev.js",
+    "build": "./node_modules/.bin/webpack --config webpack.production.js -p",
     "webpack:dev": "npm run webpack -- --w",
     "serve": "./node_modules/.bin/webpack-dev-server --config webpack.dev.js",
     "start": "node server.js"
@@ -22,18 +23,22 @@
     "clean-webpack-plugin": "^3.0.0",
     "core-js": "^3.2.1",
     "css-loader": "^3.2.0",
+    "cssnano": "^4.1.10",
     "eslint": "^6.3.0",
     "file-loader": "^4.2.0",
     "html-webpack-plugin": "^3.2.0",
     "http-server": "^0.11.1",
     "husky": "^3.0.5",
+    "mini-css-extract-plugin": "^0.8.0",
     "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
     "sass-loader": "^8.0.0",
     "style-loader": "^1.0.0",
     "url-loader": "^2.1.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9",
-    "webpack-dev-server": "^3.8.1"
+    "webpack-dev-server": "^3.8.1",
+    "webpack-merge": "^4.2.2"
   },
   "dependencies": {
     "express": "^4.17.1"
