@@ -31,4 +31,9 @@ module.exports = {
       }
     ],
   },
+  devServer: {
+    contentBase: join(__dirname, 'webpack-examples'),
+    compress: true,
+    port: 3000,
+  },
 };

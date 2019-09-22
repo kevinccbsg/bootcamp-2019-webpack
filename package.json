@@ -8,6 +8,7 @@
     "server": "./node_modules/.bin/http-server . -c-1",
     "webpack": "./node_modules/.bin/webpack --config webpack.dev.js",
     "webpack:dev": "npm run webpack -- --w",
+    "serve": "./node_modules/.bin/webpack-dev-server --config webpack.dev.js",
     "start": "node server.js"
   },
   "keywords": [],
@@ -23,7 +24,8 @@
     "husky": "^3.0.5",
     "style-loader": "^1.0.0",
     "webpack": "^4.40.2",
-    "webpack-cli": "^3.3.9"
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
     "express": "^4.17.1"
