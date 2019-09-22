@@ -1,6 +1,7 @@
 
 import { toggleClass, renderLoader } from './ui';
 import api from './api';
+import defaultImage from '../images/default.jpg';
 
 const templateShow = ({ principal, name, image, summary, id }) => `
   <a href="/detail/${id}">
@@ -10,7 +11,7 @@ const templateShow = ({ principal, name, image, summary, id }) => `
       </header>
       <div class="card-content">
         <div class="card-content-image">
-          <img src="${image ? image.medium : '/src/images/default.jpg'}">
+          <img src="${image ? image.medium : defaultImage}">
         </div>
         <div class="card-content-text">
           <p>${summary}
