@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const { join } = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -31,6 +32,13 @@ module.exports = {
       }
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      title: 'My App',
+      filename: 'home.html',
+      template: join(__dirname, 'webpack-examples', 'index.html'),
+    }),
+  ],
   devServer: {
     contentBase: join(__dirname, 'webpack-examples'),
     overlay: true,
