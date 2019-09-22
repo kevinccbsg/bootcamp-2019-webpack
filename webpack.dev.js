@@ -10,6 +10,7 @@ module.exports = {
   output: {
     path: join(__dirname, 'build'),
     filename: 'bundle.[name].js',
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -48,6 +49,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new webpack.ProgressPlugin(),
+    new webpack.HotModuleReplacementPlugin(),
     new HtmlWebpackPlugin({
       title: 'My App',
       filename: 'index.html',
@@ -57,8 +59,14 @@ module.exports = {
   devServer: {
     contentBase: join(__dirname, 'src'),
     overlay: true,
-    open: true, 
+    // open: true, 
     compress: true,
+    // proxy: {
+    //   '/': 'http://localhost:3000'
+    // },
     port: 3000,
+    historyApiFallback: true,
+    hot: true,
+    // watchContentBase: true,
   },
 };
