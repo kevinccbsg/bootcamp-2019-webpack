@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 const { join } = require('path');
+const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
@@ -35,6 +36,7 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
+    new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       title: 'My App',
       filename: 'home.html',
