@@ -1,5 +1,5 @@
-import api from './api.js';
-import { renderQuotes } from './quotes.js';
+import api from './api';
+import { renderQuotes } from './quotes';
 
 const { getShowDetail } = api();
 

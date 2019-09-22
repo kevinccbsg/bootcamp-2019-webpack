@@ -1,6 +1,6 @@
 
-import { toggleClass, renderLoader } from './ui.js';
-import api from './api.js';
+import { toggleClass, renderLoader } from './ui';
+import api from './api';
 
 const templateShow = ({ principal, name, image, summary, id }) => `
   <a href="/detail/${id}">

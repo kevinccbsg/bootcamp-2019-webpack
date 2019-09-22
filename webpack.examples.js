@@ -6,7 +6,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: ['@babel/polyfill', join(__dirname, 'src', 'index.js')],
+  entry: join(__dirname, 'webpack-examples', 'handling-css.js'),
   output: {
     path: join(__dirname, 'build'),
     filename: 'bundle.[name].js',
@@ -20,7 +20,7 @@ module.exports = {
           {
             loader: 'css-loader',
             options: {
-              modules: false,
+              modules: true,
             },
           },
         ],
@@ -50,12 +50,12 @@ module.exports = {
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({
       title: 'My App',
-      filename: 'index.html',
-      template: join(__dirname, 'index.html'),
+      filename: 'home.html',
+      template: join(__dirname, 'webpack-examples', 'index.html'),
     }),
   ],
   devServer: {
-    contentBase: join(__dirname, 'src'),
+    contentBase: join(__dirname, 'webpack-examples'),
     overlay: true,
     open: true, 
     compress: true,

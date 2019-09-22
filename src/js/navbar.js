@@ -1,8 +1,8 @@
 
 // console.log('navbar');
-import { toggle } from './ui.js';
-import { renderShowsDOM } from './shows.js';
-import storage from './storage.js';
+import { toggle } from './ui';
+import { renderShowsDOM } from './shows';
+import storage from './storage';
 // const { toggle: className } = require('./ui.js'); ()
 
 const { setItem, getItem } = storage('cookieStorage');

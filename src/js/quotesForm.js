@@ -1,4 +1,4 @@
-import api from './api.js';
+import api from './api';
 
 const QUOTES_API = 'https://quotes-api-keepcoding.herokuapp.com/api/v1';
 

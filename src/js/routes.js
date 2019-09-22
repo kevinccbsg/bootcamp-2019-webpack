@@ -1,9 +1,9 @@
 /* eslint-disable no-undef */
-import { renderShowsDOM } from './shows.js';
-import { hideFilter, showFilter } from './navbar.js';
-import { showQuotesForm, hideQuotesForm } from './ui.js';
-import renderDetail from './detail.js';
-import addQuoteListener from './quotesForm.js';
+import { renderShowsDOM } from './shows';
+import { hideFilter, showFilter } from './navbar';
+import { showQuotesForm, hideQuotesForm } from './ui';
+import renderDetail from './detail';
+import addQuoteListener from './quotesForm';
 
 page('/', () => { // eslint-disable-line
   console.log('Home page');

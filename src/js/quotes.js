@@ -1,5 +1,5 @@
-import api from './api.js';
-import { quoteTemplate } from './quotesForm.js';
+import api from './api';
+import { quoteTemplate } from './quotesForm';
 
 const QUOTES_API = 'https://quotes-api-keepcoding.herokuapp.com/api/v1';
 
