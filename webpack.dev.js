@@ -33,6 +33,8 @@ module.exports = {
   },
   devServer: {
     contentBase: join(__dirname, 'webpack-examples'),
+    overlay: true,
+    open: true, 
     compress: true,
     port: 3000,
   },
