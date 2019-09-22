@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+import page from 'page';
 import { renderShowsDOM } from './shows';
 import { hideFilter, showFilter } from './navbar';
 import { showQuotesForm, hideQuotesForm } from './ui';

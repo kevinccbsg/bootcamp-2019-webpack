@@ -1,4 +1,5 @@
-/* eslint-disable no-undef */
+import Cookies from 'js-cookie';
+
 const lStorage = {
   setItem: (key, value) => localStorage.setItem(key, value),
   getItem: key => localStorage.getItem(key),
