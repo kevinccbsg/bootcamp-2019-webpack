@@ -7,6 +7,7 @@
     "lint": "./node_modules/.bin/eslint src",
     "server": "./node_modules/.bin/http-server . -c-1",
     "webpack": "./node_modules/.bin/webpack --config webpack.dev.js",
+    "webpack:dev": "npm run webpack -- --w",
     "start": "node server.js"
   },
   "keywords": [],
